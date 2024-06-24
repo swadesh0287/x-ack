@@ -920,8 +920,6 @@ ul{list-style-type: none;}
 }
 }
 
-
-  
   @media screen and (max-width: 767px) {
     .nav-dropdown-icon-2 {
       font-size: 14px;
@@ -981,7 +979,9 @@ ul{list-style-type: none;}
   .nav-button-wrapper {
     width: auto;
   }
-
+  .nav-menus.active {
+    display: flex; 
+  }
   
   }
   
@@ -1065,6 +1065,10 @@ ul{list-style-type: none;}
       
       .nav-dropdown-link-2.no-border-bottom {
         border-bottom-color: rgba(255, 255, 255);
+      }
+      
+      .nav-menus.active {
+        display: flex; /* Show when active */
       }
       
       .nav-dropdown-box-item {
